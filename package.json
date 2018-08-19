@@ -1,0 +1,26 @@
+{
+  "name": "angular6-dryrun",
+  "version": "3.0.0",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "HalfMortise",
+    "url": "https://www.github.com/halfmortise"
+  },
+  "scripts": {
+    "build": "rimraf public_html/dist && tsc && webpack --config webpack/webpack.live.js --progress --profile --bail",
+    "postinstall": "typings install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/halfmortise/angular6-dryrun"
+  },
+  "dependencies": {
+    "@angular/common": "^5.2.1",
+    "@angular/compiler": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^8.5.9",
+    "awesome-typescript-loader": "^3.4.1",
+    "bootstrap": "^4.0.0"
+  }
+}
